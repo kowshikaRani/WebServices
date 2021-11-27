@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background:linear-gradient(155deg, #0099ff, #66d9ff, #66ccff);
+  position:fixed;
+  top:0;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ffd699;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ffd699;
+  color: black;
+}
+
+.topnav-right {
+  float: right;
+}
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 600px; /* Used in this example to enable scrolling */
+}
+img{
+width: 200;
+height:200;
+
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="#home" class="active">Home</a>
+  <a href="http://localhost:5006/api/menu">View Menu</a>
+
+  <div class="topnav-right">
+    <a href="http://localhost:5006/api/signin">Login</a>
+    <a href="http://localhost:5006/api/signup">SignUp</a>
+  </div>
+</div>
+
+
+<div class="main" >
+  <center>
+  <img src="/static/home.jpg" alt="Menu">
+  </center>
+  
+</div>
+
+
+</body>
+</html>

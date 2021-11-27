@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background:linear-gradient(155deg, #0099ff, #66d9ff, #66ccff);
+  position:fixed;
+  top:0;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ffd699;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ffd699;
+  color: black;
+}
+
+.topnav-right {
+  float: right;
+}
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 600px;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="http://localhost:5006/api">Home</a>
+  <a href="#contact" class="active">View Menu</a>
+  <a href="http://localhost:5006/api/booking">book table</a>
+  <a href="http://localhost:5006/api/cancelbooking">Cancel table</a>
+  
+  <div class="topnav-right">
+    Hello {{ session.name }} !
+	<a href="http://localhost:5006/api/logout" >Log out</a>
+  </div>
+</div>
+
+
+<div class="main" >
+	<CENTER><img src="/static/menu.jpg" alt="Menu"></center>
+</div>
+</body>
+
+</html>
